@@ -1,33 +1,33 @@
-# Preparativos para Desenvolver Apps para o Firefox OS {#setup}
+# Requisitos para Desarrollar App para FirefoxOS {#setup}
 
-Para construir e testar apps feitos para Firefox OS você não precisa de nada além de uma versão recente do Firefox, do complemento chamado Firefox OS Simulator e de um bom editor de texto para programação[^editores].
+Para desarrollar y testear aplicaciones hechas para Firefox OS no necesitas nada más además que una versión reciente de Firefox, del complemento llamado Firefox OS Simulator y de un buen editor de texto para programar[^editores].
 
-[^editores]: Existem vários editores bons com diferentes graus de complexidade e funcionalidades. Um muito popular que eu recomendo para quem ainda não possui um editor favorito é o [SublimeText](http://sublimetext.com/). Pessoalmente eu utilizo o [WebStorm](http://www.jetbrains.com/webstorm/) que é uma IDE completa para criação de web apps.
+[^editores]: Existen varios y buenos editores con diferencia en el grado de commplejidad y funcionalidad. Uno muy popular que recomiendo para alguien que aún no posee un editor favorito es [SublimeText](http://sublimetext.com/). Personalmente yo utilizo [WebStorm](http://www.jetbrains.com/webstorm/) que es un IDE completo para creación de web apps.
 
-## Obtendo o Firefox
+## Obteniedo Firefox
 
-Diferentes navegadores possuem diferentes motores de renderização e execução de JavaScript. O Google Chrome, o Opera e o Safari utilizam o motor conhecido como WebKit (ou Blink que é um fork do WebKit). O Firefox utiliza o motor chamado Gecko, seja no desktop, no Android ou no Firefox OS. Portanto, para desenvolver apps para Firefox OS é melhor utilizar o Firefox para Desktop, pois ambos utilizam o mesmo sistema de renderização e execução de JavaScript.
+Cada navegador posee diferente motor de renderización y ejecución de JavaScript. Google Chrome, Opera y Safari utilizan el motor conocido como WebKit (o Blinkque es un fork de WebKit). Firefox utiliza el motor llamado Gecko, sea desktop, android o Firefox OS. Por tanto, para desarrollar apps para Firefox OS es mejor utilizar Firefox para Desktop, pues ambos utilizan el mismo sistema de renderuzación y ejecución de JavaScript.
 
-Além disso, a Mozilla disponibiliza um simulador do Firefox OS que funciona como um complemento do Firefox. Portanto, é necessário instalar o Firefox para desktop para poder rodar o simulador do Firefox OS.
+Además de eso, Mozilla dispone de un simulador de Firefox OS que funciona como un complemento de Firefox. Así, es necesario instalar Firefox para desktop para poder correr el simulador de Firefox OS.
 
-A versão estável atual do Firefox pode ser [obtida nessa página](http://getfirefox.com). Basta seguir as instruções para instalar no seu sistema operacional preferido.
+La versión actual estable de Firefox puede ser [obtenida en esta página](http://getfirefox.com). Basta seguir las instrucciones para instalarlo en su sistema operativo preferido.
 
-## Instalando o Simulador do Firefox OS
+## Instalando el Simulador de Firefox OS
 
-Após a instalação do Firefox, o próximo passo é a instalação do simulador do Firefox OS que será utilizado para testarmos nossos aplicativos. Com o Firefox instalado e rodando, vá no menu **Ferramentas** e selecione **Complementos**[^tools-add-ons], como pode ser visto na imagem abaixo:
+Luego de la instalación de Firefox, el próximo paso es la instalación del simulador de Firefox OS que serå utilizado para testear nuestras aplicaciones. Con Firefox instalando y funcionando, vamos al menú **Herramientas** y seleccione **Complementos**[^tools-add-ons], Como podemos ver en la imagen de abajo:
 
-[^tools-add-ons]: Caso seu sistema esteja em inglês, procure o menu **Tools** e então **Add-ons**.
+[^tools-add-ons]: En caso que su sistema esté en inglés, busque el menú **Tools** y **Add-ons**.
 
-![Menu **Ferramentas** com menu **Complementos** selecionado](images/originals/tools.png)
+![Menu **Herramentas** com menu **Complementos** selecionado](images/originals/tools.png)
 
-Utilizando a ferramenta de busca presente no canto superior direito, procure por **firefox os simulator** e instale o simulador.
+Utilizando la herramienta de busqueda presente en la esquina superiro derecha, busque **firefox os simulator** e instale el simulador.
 
-![Gerenciador de complementos mostrando o simulador](images/originals/addons-simulator.png)
+![Administrador de complementos mostrando el simulador](images/originals/addons-simulator.png)
 
-Após o complemento ser instalado, ele estará disponível no menu **Ferramentas -> Desenvolvedor Web -> Simulador do Firefox OS**
+Luego de que el complemento es instalado, el estará disponible en el menú **Herramientas -> Desarrollador Web -> Firefox OS Simulator**
 
-![Onde fica o simulador após instalado](images/originals/tools-web-developer-simulator.png)
+![Donde está el simulador luego de ser instalado](images/originals/tools-web-developer-simulator.png)
 
-## Conclusão
+## Conclusión
 
-Agora que temos todo o ambiente preparado, vamos aprender uns conceitos básicos para então construirmos nosso primeiro app.
+Ahora que tenemos todo el ambiente preparado, vamos a aprender unos conceptos básicos para construir nuestra primer app.
