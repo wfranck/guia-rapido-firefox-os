@@ -10,7 +10,7 @@ Para distribuir aplicaciones en el marketplace necesitas estar identificado via 
 
 Toda aplicación que es enviada para el marketplace pasa por un proceso de aprobación. Aplicaciones normales pasan por un proceso menos riguroso que aplicaciones pribilediadas, pues utilizan APIs menos sensibles. Antes de enviar la aplicación, familiaricese con [Los criterios de validación de marketplace](https://developer.mozilla.org/en-US/docs/Web/Apps/Publishing/Marketplace_review_criteria). Los puntos más importantes son:
 
-* Forefox OS no tiene un boteon volver como el navegador o Android. Si dentro de su app el usuario navega a algún punto y no tiene cómo volver (y queda aprisionado en una pantalla), su app será rechazada.
+* Forefox OS no tiene un botón volver como el navegador o Android. Si dentro de su app el usuario navega a algún punto y no tiene cómo volver (y queda aprisionado en una pantalla), su app será rechazada.
 * Su app debe contener íconos 60x60, utilizados por Firefox OS, y una descripción detallada sobre qué hace en su manifest.
 * Si su app pide permisos para alguna funcionalidad, debe usarla. Marcar la app como privilegiada y no utilizar nada de las APIs privilegiadas hará que su app sea rechazada con un pedido de modificación para el tipo normal.
 * Su app necesita tener una política de privacidad bien explicada en el marketplace.
