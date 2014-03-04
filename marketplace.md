@@ -1,82 +1,81 @@
-# O Firefox Marketplace
+# Firefox Marketplace
 
 ![Firefox Marketplace](images/originals/marketplace.png)
 
-O [Firefox Marketplace](http://marketplace.firefox.com) é o mercadinho do Firefox onde você pode pegar ou comprar apps para o Firefox OS, Firefox Desktop e Firefox para Android. Ele é o principal canal para distribuição de aplicativos para Firefox OS, porém você não precisa usá-lo se não quiser.
+[Firefox Marketplace](http://marketplace.firefox.com) es el store de Firefox donde puedes tomar e instalar aplicaciones para Firefox OS, Firefox Desktop y Firefox para Android. Es el principal canal para distribución de aplicaciones para Firefox OS, sin embargo no necesitas usarlo si no quieres.
 
-Para distribuir apps no marketplace você precisa estar identificado via [Mozilla Persona](https://login.persona.org/about). Basta clicar **Sign Up** e seguir as instruções. Uma vez identificado, você esta pronto para enviar apps para o Firefox Marketplace.
+Para distribuir aplicaciones en el marketplace necesitas estar identificado via [Mozilla Persona](https://login.persona.org/about). Basta cliquear **Sign Up** y seguir las instrucciones. Una vez identificado, estás listo para enviar aplicaciones para Firefox Marketplace.
 
-## Checklist antes de pensar em enviar o seu app
+## Checklist antes de pensar e enviar su app
 
-Todo aplicativo que é enviado para o marketplace passa por um processo de aprovação. Aplicativos normais passam por um processo menos rigoroso que aplicativos privilegiados, pois utilizam APIs menos sensíveis. Antes de enviar o aplicativo, familiarize-se com [os critérios de avaliação do marketplace](https://developer.mozilla.org/en-US/docs/Web/Apps/Publishing/Marketplace_review_criteria). Os pontos mais importantes são:
+Toda aplicación que es enviada para el marketplace pasa por un proceso de aprobación. Aplicaciones normales pasan por un proceso menos riguroso que aplicaciones pribilediadas, pues utilizan APIs menos sensibles. Antes de enviar la aplicación, familiaricese con [Los criterios de validación de marketplace](https://developer.mozilla.org/en-US/docs/Web/Apps/Publishing/Marketplace_review_criteria). Los puntos más importantes son:
 
-* O Firefox OS não tem um botão de voltar como o navegador ou o Android. Se dentro da sua app o usuário navegar para algum ponto e não tiver como voltar mais (ficar preso em uma tela), seu app será rejeitado.
-* Seu app deve conter os ícones 60x60, utilizados pelo Firefox OS, e uma descrição detalhada do que ele faz no manifesto.
-* Seu aplicativo deve fazer o que diz a descrição dele. Você não pode falar que o seu app faz uma coisa que ele não faz.
-* Se o seu app pede uma permissão para alguma funcionalidade, ele deve usá-la. Marcar o app como privilegiado e não utilizar nada das APIs privilegiadas fará com que o seu app seja rejeitado com um pedido para alterar o tipo para normal.
-* Seu app precisa ter uma política de privacidade bem explicada no marketplace.
-* O manifesto e o aplicativo devem vir do mesmo domínio, no caso de apps hospedados.
+* Forefox OS no tiene un boteon volver como el navegador o Android. Si dentro de su app el usuario navega a algún punto y no tiene cómo volver (y queda aprisionado en una pantalla), su app será rechazada.
+* Su app debe contener íconos 60x60, utilizados por Firefox OS, y una descripción detallada sobre qué hace en su manifest.
+* Si su app pide permisos para alguna funcionalidad, debe usarla. Marcar la app como privilegiada y no utilizar nada de las APIs privilegiadas hará que su app sea rechazada con un pedido de modificación para el tipo normal.
+* Su app necesita tener una política de privacidad bien explicada en el marketplace.
+* El manifest de una aplicación debe venir del mismo dominio, en caso de apps hosteadas.
 
-Existem outros critérios, como mostrado nos links acima. Vale a pena estudar esses critérios antes de enviar o app. Afinal, perde-se muito tempo tendo o aplicativo rejeitado por uma bobagem que você resolve em cinco minutos.
+Existen otros criterios además de los mostrados. Vale la pena ver esos criterios antes de enviar una app. Al final, se pierde mucho tiempo con una aplicación rechazada por tonterías que puedes resolver en cinco minutos.
 
-## Preparando seu app para envio
+## Preparando su app para el envío
 
-A preparação do seu app para envio depende do tipo de app que ele é. Aplicativos hospedados simplesmente precisam estar disponíveis em algum servidor web. Aplicativos empacotados devem ser zipados antes do envio e merecem mais atenção.
+La preparación de su app para el envío depente del tipo de app qie es. Aplicaciones hosteadas simplemente necesitan estar disponibles en algún servidor web. Aplicaciones empaquetadas deben ser zipeadas antes del envío y merecen más atención.
 
-Muita gente comete o erro de selecionar a pasta que contém os arquivos do aplicativo e mandar zipar. Isso faz com que o zip contenha uma pasta e essa pasta contenha todos os arquivos. Esse não é o jeito correto de zipar apps para Firefox OS. O correto é fazer com que o zip contenha diretamente os arquivos do aplicativo. Mais especificamente, o que é necessário é que o manifesto esteja na *raiz do arquivo zip*, ou seja, que ele não esteja dentro de nenhuma pasta dentro do arquivo compactado. No Mac OS X e no Linux podemos navegar no terminal até dentro da pasta que está o nosso aplicativo e executar um comando como `zip -r meuapp.zip *`, como podemos ver na captura de tela a seguir.
+Mucha gente comete el error de seleccionar la carpeta que contiene los archivos de la aplicación y lo zipea. Eso hace que el zip tenga una carpeta y esa carpeta tenga todos los archivos. Eso no es la manera correcta de zipear apps para Firefox OS. Lo correcto es que el zip contenga directamente los archivos de la aplicación. Específicamente, lo que es necesario es que el manifest esté en *raíz del archivo zip*, o sea, que el no esté dentro de ninguna carpeta dentro del archivo comprimido. En Mac OS X y en Linux podemos navegar por terminal hasta dentro de la carpeta que está nuestra aplicación y ejecutar un comando `zip -r miapp.zip *`, como podemos ver an la captura de pantalla que sigue.
 
-![Zipando corretamente os arquivos](images/originals/marketplace-preparing-packaged-app.png)
+![Zipeando corretamente los archivos](images/originals/marketplace-preparing-packaged-app.png)
 
-O arquivo zip final é o que enviaremos para o marketplace.
+El archivo zip final es lo que enviaremos para el marketplace.
 
-## Envio para o Firefox Marketplace
+## Envio para Firefox Marketplace
 
-De posse do seu app pronto e da certeza que ele preenche todos os requisitos para ser aprovado, você deve navegar para **Meus Envios**[^meus-envios] utilizando o botão da engrenagem.
+Después que su aplicación esté lista y seguros de todos los requisitos serán aprobados, debemos navegar hasta **Mis Eníos**[^mis-envios] utilizando el botón de engranaje.
 
-![Meus Envios](images/originals/marketplace-my-submissions.png)
+![Mis Envios](images/originals/marketplace-my-submissions.png)
 
-Dentro da página de gerência dos seus aplicativos, você deve clicar em **Enviar um novo aplicativo** no menu superior.
+Dentro de la página de administración de sus aplicaciones, debes cliquear en **Enviar una nueva aplicación** en el menú superior.
 
-![Link para enviar novo aplicativo](images/originals/marketplace-new-app.png)
+![Link para enviar la nueva aplicación](images/originals/marketplace-new-app.png)
 
-Esse link o levará para o formulário de entrada de novo aplicativo que pode ser visto na tela abaixo.
+Ese link lo llevará para el formulario de entrada de nueva aplicación que puede verse en la pantalla abajo.
 
-![Enviar novo app](images/originals/marketplace-step-1.png)
+![Enviar nueva app](images/originals/marketplace-step-1.png)
 
-Nessa tela você pode selecionar as seguintes opções:
+En esa pantalla puedes seleccionar las siguientes opciones:
 
-* Se o aplicativo é hospedado ou empacotado.
-* Se ele é gratuito ou pago (ou com *in-app purchases*).
-* Em quais aparelhos ele funciona (Firefox OS, Firefox Desktop, Firefox for Mobile no Telefone, Firefox for Mobile no Tablet).
+* Si la aplicación es hosteada o empaquetada.
+* Si es gratuita o paga(o con *in-app purchases*).
+* En qué dispositivos funciona (Firefox OS, Firefox Desktop, Firefox for Mobile en el Teléfono, Firefox for Mobile en Tablet).
 
-Feitas essas escolhas, você passa para a segunda tela. Neste livro estamos fazendo o processo para o envio de um app empacotado, porém os demais tipos de app têm um workflow semelhante.
+Hechas esa elección, puedes pasar a la segunda pantalla. En este libro estamos haciendo el proceso para el envío de una app empaquetada, sin embargo los demás tipod de app tienen un workflow semejante.
 
-Estamos assumindo, para efeito desse exemplo, um aplicativo empacotado gratuito para Firefox OS. Nesse caso, ele pede que a gente faça upload do arquivo que preparamos na etapa anterior.
+Estamos asumiento, a efectos de este ejemplo, una aplicación empaquetada gratuita para Firefox OS. En este caso, pide que la gente haga u upload del archivo que preparamos en la etapa anterior.
 
-[^meus-envios]: Em português *My Submissions*.
+[^mis-envios]: En castellano *My Submissions*.
 
-Após o envio do arquivo, ele será processado e um relatório com mais opções será mostrado.
+Luego del envó del archivo, será procesado y se mostrarán más opciones.
 
-![Depois do envio do arquivo zip](images/originals/marketplace-step-1_5.png)
+![Luego del envío del archivo zip](images/originals/marketplace-step-1_5.png)
 
-Como podemos ver na captura, esse programa que eu enviei não contém erros, mas contém seis avisos. Fora isso, podemos marcar os **requisitos mínimos** para que o app seja instalado. No caso desse exemplo, o último requisito, que fala sobre resolução de tela qHD, deve ser desmarcado, visto que esse aplicativo funciona em qualquer resolução.
+Como podemos ver en la captura, el programa que envié no contiene errores, pero contiene seis avisos. Fuera de eso, podemos marcar los **requisitos mínimos** para que la app sea instalada. En este ejemplo, el último requisito, que habla sobre resoluciónde pantalla qHD, debe ser desmarcado, visto que esta aplicación funciona en cualquier resolución.
 
-O próximo passo, chamado **Passo #3: Detalhes**, é onde você preenche as informações sobre o seu aplicativo, tais como categoria e descrição, e fornece capturas de tela.
+El próximo paso, llamado **Paso #3: Detalles**, es donde usted provee la información sobre su aplicación, tales como categoiría y descripción, tales como categoría y descripción, y proporciona capturas de pantalla.
 
-![Preenchendo detalhes](images/originals/marketplace-step-3.png)
+![Proveyendo detalles](images/originals/marketplace-step-3.png)
 
-Após preencher os detalhes, o processo de envio está concluído e aí basta aguardar a aprovação dos revisores do marketplace. Parabéns, você tem um aplicativo no Firefox OS!!!
+Luego de proveer los detalles, el proceso de envío está terminado y sólo basta aguardar la aprobación de revisores del marketplace. Felicitaciones, tienes una aplicación en Firefox OS!!!
 
-Na página de [Gerência de Aplicativos](https://marketplace.firefox.com/developers/submissions) você pode verificar o status dos seus envios e alterar detalhes se necessário.
+En la página de [Administración de Aplicaciones](https://marketplace.firefox.com/developers/submissions) puedes verificar el status de sus envíos y modificar los detalles si es necesario.
 
-Para saber mais sobre o envio de aplicativos para o Firefox Marketplace, leia [esse artigo na central do desenvolvedor do Firefox OS](https://marketplace.firefox.com/developers/docs/submission).
+Para saber más sobre el envío de aplicaciones para Firefox Marketplace, lea [ese archivo en la central de desarrollador de Firefox OS](https://marketplace.firefox.com/developers/docs/submission).
 
-## Conclusão
+## Conclusión
 
-Parabééééns!!!! Você agora tem um aplicativo no Firefox Marketplace. Você esta desbravando um mercado todo novo! 
+Felicitaciones!!!! Ahora tienes una aplicación en Firefox Marketplace. Has conocido un nuevo mercado!
 
-Espero que tenha gostado deste guia rápido. Eu pretendo atualizar este guia constantemente (inclusive achando um bom editor para consertar meu analfabetismo). Portanto, fique atento para novidades. Se você baixou este livro do Leanpub, então fique tranquilo que você será avisado das atualizações.
+Esoeri que hayas gustado de esta guía rápida. Pretendo actualizar esta guía constantemente (inclusive encontrando un buen editor para mejorar mi analfabetismo). Así que, esté atengo para las novedades. Se bajó este libro de Leanpub, esté tranquilo que será avisado de las actualizaciones.
 
-Não deixe de me dar algum feedback. Eu fiquei a noite inteira acordado escrevendo este livro, ou seja, eu realmente gosto deste projeto! Eu fico constantemente olhando o Twitter onde minha conta é [@soapdog](http://twitter.com/soapdog).
+No deje de darme feedback. Quedé despierto la noche entera escribiendo este libro, o sea, realmente gusto del proyecto! Estoy constantemente mirando Twitter, mi cuenta es [@soapdog](http://twitter.com/soapdog).
 
-Agora que você faz parte dos criadores de aplicativos para Firefox OS, venha fazer parte da [Comunidade Mozilla Brasil](http://mozillabrasil.org.br) e ajudar projetos livres, como o Firefox OS, a crescer ainda mais.
+Ahora que eres parte de los desarrolladores para Firefox OS, haga parte de la comunidad en Brasil [Comunidade Mozilla Brasil](http://mozillabrasil.org.br) y ayude a los proyectos libres, como Firefox OS, para que cresca aún más.
