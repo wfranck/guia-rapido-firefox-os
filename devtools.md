@@ -1,42 +1,42 @@
-# Ferramentas do Desenvolvedor
+# Herramientas de Desarrollo
 
-O Firefox possui diversas ferramentas para auxiliar os desenvolvedores web a fazerem o seu trabalho. Muita gente ainda usa o [FireBug](https://addons.mozilla.org/pt-BR/firefox/addon/firebug/) e não sabe que o Firefox já inclui ferramentas próprias. Nesta sessão vamos ver rapidamente algumas ferramentas que são muito úteis para quem está desenvolvendo apps.
+Firefox posee diversas herramientas para ayudar a los desarrolladores web a hacer su trabajo. Mucha gente asún usa [FireBug](https://addons.mozilla.org/pt-BR/firefox/addon/firebug/) y no sabe que Firefox ya incluye herramientas propias. En esta sección vamos a ver rápidamente algunas herramientas que son muy útiles para quien está desarrollando apps.
 
-Quem estiver interessado em conhecer mais sobre essas ferramentas e o que mais virá por aí pode dar uma olhada na [página da MDN sobre ferramentas do desenvolvedor](https://developer.mozilla.org/en-US/docs/Tools).
+Quien esté interesado en conocer más sobre esas herramientas y lo que más cambia, puede dar una mirada en la [página de MDN sobre herramientas de desarrollador](https://developer.mozilla.org/en-US/docs/Tools).
 
-## Conhecendo o Modo de Design Adaptável
+## Conociendo el Modo de Diseño Adaptable
 
-Uma das coisas mais cômodas de quando estamos desenvolvendo para web é o fato de podermos simplesmente salvar o HTML e recarregar a página no browser para vermos as mudanças, sem a necessidade de um compilador ou coisa do gênero. Por mais que o simulador do Firefox OS também permita esse tipo de workflow, às vezes queremos simplesmente ir testando as coisas no Firefox no desktop mesmo. Esse tipo de teste no desktop é muito comum quando estamos lidando com aplicativos hospedados que devem se adaptar para desktops, tablets e telefones. Nesses casos você pode utilizar o **Modo de Design Adaptável** para adaptar a tela (e o viewport) para tamanhos comuns de tablet e telefones e ver como seu trabalho fica nessas telas.
+Una de las cosas más cómodas de cuando estamos desarrollando para web es la forma en que podemos simplemente guardar el HTML y recargar la página en el browser para ver los cambios, sin la necesidad de un compilador o cosas del tipo. Por más que el simulador de Firefox OS también permita este tipo de workflow, a veces queremos simplemente ir testeando las cosas en Firefox en el mismo escritorio. Este tipos de test en escritorio es muy común cuando estamos lidiando con aplicaciones hospedadas que deben adaptarse al desktop, tablets y teléfonos. En esos casos puedes utilizar el **Modo de Design Responsive** para adaptar la pantalla (y el viewport) para tamaños comunes de tablet y teléfonos, y ver como su trabajo queda en esas pantallas.
 
-A utilização do modo de design adaptável é especialmente importante para quem está trabalhando com [**media queries**](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries), pois permite que você redimensione a tela do jeito que bem entender e teste o seu CSS.
+La utilización del modo de diseño responsive es especialmente importante para quien está trabajando con [**media queries**](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries), pues permite que redimensiones la pantalla justo a la manera que debe ser el test de su CSS.
 
-O modo de design adaptável pode ser ativado no **menu Ferramentas -> Desenvolvedor Web -> Modo de Design Adaptável**[^responsive-design-view], como podemos ver na imagem abaixo.
+El modo de diseño responsive puede ser activado en el **menu Herramientas -> Desarrollador Web -> Modo de Diseño Adaptable**[^responsive-design-view], como podemos ver en la imagen debajo.
 
-[^responsive-design-view]: Em inglês *Responsive Design View*.
+[^responsive-design-view]: En inglés *Responsive Design View*.
 
-![Ativando o Modo de Design Adaptável](images/originals/responsive-design-view.png)
+![Activando el Modo de Diseño Adaptable](images/originals/responsive-design-view.png)
 
-Ao ativar esse modo, a tela do Firefox se modifica de maneira que você possa alterar o tamanho do viewport utilizando as laterais da tela ou a caixa de seleção.
+Al activar este modo, la pantalla de Firefox se modifica de manera que puedas modificar el tamaño de viewport utilizando las costado de la pantalla o el box de selección.
 
-![Exemplo do Modo de Design Adaptável](images/originals/responsive-view-sample.png)
+![Ejemplo de Mofo de Diseño Adaptable](images/originals/responsive-view-sample.png)
 
-A maioria dos telefones rodando Firefox OS e que estavam no mercado até 2013 funcionam com uma resolução de 480x320. Porém, em vez de simplesmente fazer as coisas pensando nessa resolução, é mais legal utilizar media queries e a metodologia chamada de design responsivo. Para quem quer saber mais sobre design responsivo eu recomendo o livro [Responsive Web Design](http://www.abookapart.com/products/responsive-web-design) e o [Mobile First](http://www.abookapart.com/products/mobile-first). A editora nacional [**Casa do Código**](http://casadocodigo.com.br) está com livros muito bons a preços muito acessíveis também. Dos livros do catálogo deles, os mais interessantes para o assunto em questão são  [Web Design Responsivo](http://www.casadocodigo.com.br/products/livro-web-design-responsivo) e [A Web Mobile](http://www.casadocodigo.com.br/products/livro-web-mobile). Para quem quiser entrar de cabeça, eles têm um [pacote de livros de web responsiva e mobile](http://www.casadocodigo.com.br/products/colecao-webdesign).
+La mayoría de lso teléfonos corriendo Firefox OS y que estaban en el mercado hasta 2013 funcionan con una resolución de 480x320. Por eso, en vez que simplemente hacer las cosas pensando esa resolución, y mejor  utilizar media queries y la metodología llamada de diseño adaptable. Para quien quiere saber más sobre diseño adaptable recomiendo el libro [Responsive Web Design](http://www.abookapart.com/products/responsive-web-design) y [Mobile First](http://www.abookapart.com/products/mobile-first). En brasil [**Casa do Código**](http://casadocodigo.com.br),  [Web Design Responsivo](http://www.casadocodigo.com.br/products/livro-web-design-responsivo) y [A Web Mobile](http://www.casadocodigo.com.br/products/livro-web-mobile), ó [pacote de livros de web responsiva e mobile](http://www.casadocodigo.com.br/products/colecao-webdesign).
 
-Em resumo, o modo de design adaptável permite que a gente teste os nossos apps em diversos tamanhos de tela, sem ser necessário ficar redimensionando a janela principal do Firefox. Na minha opinião, é uma das ferramentas mais úteis do mundo e eu não sei porque os demais navegadores ainda não copiaram...
+En síntesis, el modo de diseño responsive permite que la gente testée nuestras apps en diversos tamaños de tela, sin ser necesario quedar redimensionando la pantalla principal de Firefox. En mi opinión, es una de las herramientas más útiles de un mundo y no sé porqué los demás navegadores aún no copiaron...
 
 
-## Outras Ferramentas
+## Otras Herramientas
 
-As ferramentas de desenvolvedor do Firefox são similares às do FireBug e do Google Chrome. Elas permitem que você interaja com o DOM e com o ambiente do JavaScript da página que está carregada e muito mais. Com elas você pode testar suas funções JavaScript, enviar comandos de depuração e status via o [objeto console](https://developer.mozilla.org/en-US/docs/Web/API/console) e manipular tanto o DOM como o CSS da página. São ferramentas imprescindíveis para quem está trabalhando com web.
+Las herramientas de desarrollador de Firefox son similares a las de Firebug y de Google Chrome. Ellas permiten que interactúes con el DOM y con el ambiente de JavaScript de la página que está cargada y mjucho más. Con ellas puedes testear tus funciones JavaScript, enviar comandos de depuración y status vía el [objeto console](https://developer.mozilla.org/en-US/docs/Web/API/console) y manipular tanto con el DOM como el CSS de la página. Son herramientas imprescindibles para quien está trabajando con web.
 
-![Página com o Console de JavaScript visível](images/originals/console-open.png) 
+![Página con la Consola de JavaScript visible](images/originals/console-open.png) 
 
-Além do *console de JavaScript* existem várias outras ferramentas como um [*editor de estilo*](https://developer.mozilla.org/en-US/docs/Tools/Style_Editor), [*monitor de rede*](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor), [*profiler de JavaScript*](https://developer.mozilla.org/en-US/docs/Tools/Profiler), [*depurador de JavaScript*](https://developer.mozilla.org/en-US/docs/Tools/Debugger), [*inspetor de páginas*](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector) entre outros.
+Además de la *consola de JavaScript* existen varias otras herramientas como un [*editor de estilo*](https://developer.mozilla.org/en-US/docs/Tools/Style_Editor), [*monitor de red*](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor), [*profiler de JavaScript*](https://developer.mozilla.org/en-US/docs/Tools/Profiler), [*depurador de JavaScript*](https://developer.mozilla.org/en-US/docs/Tools/Debugger), [*inspector de páginas*](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector) entre otros.
 
-Como vimos no aplicativo que construímos no capítulo anterior, o console pode ser utilizado para verificar o andamento do nosso programa. Existem muitos desenvolvedores web que ainda utilizam *alerts()* espalhados pelo código para debugar coisas. Aprender a utilizar as ferramentas do desenvolvedor é um passo muito importante na formação de qualquer um (sem contar que poupa um tempo desgraçado).
+Como vimos en la aplicación que construímos en el capítulo anterior, la consola puede ser utilizada para verificar el funcionamiento de nuestro programa. Existen muchos desarrolladores web que aún utilizan *alerts()* esparcidos por el código para debuggear cosas. Aprender a utilizar las herramientas de desarrollador es un paso muy importante en la formación de cualquier desarrollador.
 
-Uma ferramenta que vale um destaque é o [*depurador remoto*](https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging), que permite que você conecte um telefone rodando Android ou Firefox OS ao seu computador e utilize as ferramentas de desenvolvedor do seu computador para depurar o que esta rodando no aparelho móvel.
+Una herramienta que vale destacar es el [*depurador remoto*](https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging), que permite que conectes un teléfono corriendo Android o Firefox OS a su computadora y utiliza las herramientas de desarrollador de su computadora para depurar lo que se está ejecutando en su dispositivo móvil.
 
-## Conclusão
+## Conclusión
 
-Este foi um capítulo expositivo para dar ao leitor referências para aprender mais sobre as ferramentas que vêm no Firefox. A utilização dessas ferramentas facilita muito a vida da gente e quando aliamos elas com o simulador do Firefox OS temos uma combinação imbatível para construção de apps. Por isso, no próximo capítulo vamos aprender um pouco mais sobre o simulador.
+Este fue un capítulo de exposición para dar al lector referencias para aprender más sobre las herramientas que vienen en Firefox. La utilización de esas herramientas facilitan mucho la vida de la gente y cuando las juntamos con el simulador de Firefox OS tenemos una combinación imbatíble para la construcción de apps. Por eso, en el próximo capítulo vamos a aprender un poco más sobre el simulador.
